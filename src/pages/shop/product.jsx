@@ -9,14 +9,14 @@ export const Product = (props) => {
 
   return (
     <div className="product">
-      <img src={productImage} />
+      <img src={productImage} alt='empty' />
       <div className="description">
         <p>
           <b>{productName}</b>
         </p>
         <p> ${price}</p>
       </div>
-      <button className="addToCartBttn" onClick={() => addToCart(id)}>
+      <button className="addToCartBtn" onClick={() => addToCart(id)}>
         Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
       </button>
     </div>
